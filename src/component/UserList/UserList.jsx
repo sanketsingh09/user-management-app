@@ -8,7 +8,7 @@ const UsersList = (props) => {
       {props.userList?.map((item) => {
         return (
           <div key={item.phone}>
-            <Link to={`/user-details/${item.id}`}>
+            <Link to={`/user-management-app/user-details/${item.id}`}>
               <div className={styles.content}>
                 <div>
                   <span className={styles.title}>Name:</span> {item.name}

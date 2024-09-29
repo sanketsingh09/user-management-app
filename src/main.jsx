@@ -7,15 +7,15 @@ import Details from "./pages/Details/Details.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/user-management-app",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/user-management-app/",
         element: <Home />,
       },
       {
-        path: "/user-details/:userId",
+        path: "/user-management-app/user-details/:userId",
         element: <Details />,
       },
     ],
