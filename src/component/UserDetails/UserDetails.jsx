@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./UserDetail.module.css";
+import styles from "./UserDetails.module.css";
 
 const UserDetails = (props) => {
   return (
@@ -9,7 +9,8 @@ const UserDetails = (props) => {
           <span className={styles.title}>Name:</span> {props.userDetail?.name}
         </div>
         <div className={styles.description}>
-          <span className={styles.title}>Address:</span> {props.userDetail?.address?.suite},{" "}
+          <span className={styles.title}>Address:</span>{" "}
+          {props.userDetail?.address?.suite},{" "}
           {props.userDetail?.address?.street} {props.userDetail?.address?.city}{" "}
           {props.userDetail?.address?.zipcode}
         </div>
