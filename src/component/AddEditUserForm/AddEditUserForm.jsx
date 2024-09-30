@@ -25,7 +25,6 @@ function AddEditUserForm(props) {
 
     if (formData.name && formData.email && formData.phone) {
       console.log("User Data:", formData);
-      setSubmitted(true);
       props.addOrEditUser(formData);
       setFormData({ name: "", email: "", phone: "" });
     } else {
